@@ -1,7 +1,7 @@
 #summary Getting started with using Indic Keyboards on Android.
 
 == Installation ==
-  * Install the app from Google play.
+  * Install the app from Google play: https://play.google.com/store/apps/details?id=org.iisc.mile.indickeyboards.android
   * Go to "Settings", open "Language and input".
   * Select "IISc MILE Indic Keyboards". Click "OK".
 
