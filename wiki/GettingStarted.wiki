@@ -1,13 +1,14 @@
-#summary One-sentence summary of this page.
+#summary Getting started with using Indic Keyboards on Android.
 
-= Introduction =
+== Installation ==
+  * Install the app from Google play.
+  * Go to "Settings", open "Language and input".
+  * Select "IISc MILE Indic Keyboards". Click "OK".
 
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+== Select language/keyboard ==
+  * Open the app where you want to enter indic text.
+  * Select input method by either long pressing in the edit text or from the top status bar.
+  * In "Select input method" dialog, select "IISc MILE Indic Keyboards".
+  * By default, Kannada "KaGaPa" layout is shown.
+  * To change language/keyboard, click settings icon at the bottom left of keyboard.
+  * Select input language followed by keyboard layout.
