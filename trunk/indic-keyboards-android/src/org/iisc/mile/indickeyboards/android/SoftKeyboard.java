@@ -699,6 +699,7 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
 	static private HashMap<Integer, Integer> mKannadaVowels;
 	static private Set<Integer> mTamilConsonants;
 	static private HashMap<Integer, Integer> mTamilVowels;
+	static private HashMap<Integer, Integer> mTamilHardSoftConsonantsPair;
 	static private Set<Integer> mDevanagariConsonants;
 	static private HashMap<Integer, Integer> mDevanagariVowels;
 	static private Set<Integer> mTeluguConsonants;
@@ -723,6 +724,15 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
 		for (int i = 0; i < tamilConsonants.length; i++) {
 			mTamilConsonants.add((int) tamilConsonants[i]);
 		}
+
+		mTamilHardSoftConsonantsPair = new HashMap<Integer, Integer>();
+		mTamilHardSoftConsonantsPair.put((int) 'க', (int) 'ங');
+		mTamilHardSoftConsonantsPair.put((int) 'ச', (int) 'ஞ');
+		mTamilHardSoftConsonantsPair.put((int) 'ட', (int) 'ண');
+		mTamilHardSoftConsonantsPair.put((int) 'த', (int) 'ந');
+		mTamilHardSoftConsonantsPair.put((int) 'ப', (int) 'ம');
+		mTamilHardSoftConsonantsPair.put((int) 'ற', (int) 'ன');
+
 		char[] tamilVowels = { 'ஆ', 'இ', 'ஈ', 'உ', 'ஊ', 'எ', 'ஏ', 'ஐ', 'ஒ', 'ஓ', 'ஔ' };
 		char[] tamilVowelSigns = { 'ா', 'ி', 'ீ', 'ு', 'ூ', 'ெ', 'ே', 'ை', 'ொ', 'ோ', 'ௌ' };
 		mTamilVowels = new HashMap<Integer, Integer>();
@@ -739,10 +749,10 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
 		for (int i = 'आ', j = 'ा'; i <= 'औ'; i++, j++) {
 			mDevanagariVowels.put(i, j);
 		}
-		mDevanagariVowels.put((int) 'अ', (int)'्');
-		mDevanagariVowels.put((int) 'ॠ', (int)'ॄ');
-		mDevanagariVowels.put((int) 'ऌ', (int)'ॢ');
-		mDevanagariVowels.put((int) 'ॡ', (int)'ॣ');
+		mDevanagariVowels.put((int) 'अ', (int) '्');
+		mDevanagariVowels.put((int) 'ॠ', (int) 'ॄ');
+		mDevanagariVowels.put((int) 'ऌ', (int) 'ॢ');
+		mDevanagariVowels.put((int) 'ॡ', (int) 'ॣ');
 
 		mTeluguConsonants = new HashSet<Integer>();
 		for (int i = 'క'; i <= 'హ'; i++) {
@@ -2342,17 +2352,17 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
 				break;
 			}
 			if (isTamilNet99Keyboard()) {
-				InputConnection ic = getCurrentInputConnection();
-				String previousCodes = ic.getTextBeforeCursor(1, 0).toString();
-				if (previousCodes.length() > 0) {
-					int previousCode = previousCodes.codePointAt(0);
-					if (mTamilConsonants.contains(primaryCode) && previousCode == primaryCode) {
-						String previousToPreviousCodes = ic.getTextBeforeCursor(2, 0).toString();
-						if (previousToPreviousCodes != null && previousToPreviousCodes.codePointAt(0) == '்') {
-							//
-						} else {
-							text = "்" + text;
-						}
+				Integer previousCode = getPreviousCode();
+				if (previousCode != null
+						&& mTamilConsonants.contains(primaryCode)
+						&& (previousCode == primaryCode || (mTamilHardSoftConsonantsPair
+								.containsKey(primaryCode) && mTamilHardSoftConsonantsPair.get(primaryCode)
+								.intValue() == previousCode.intValue()))) {
+					Integer previousToPreviousCode = getPreviousToPreviousCode();
+					if (previousToPreviousCode != null && previousToPreviousCode == '்') {
+						//
+					} else {
+						text = "்" + text;
 					}
 				}
 			}
