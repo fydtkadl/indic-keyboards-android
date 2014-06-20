@@ -43,7 +43,7 @@ public class AboutActivity extends Activity {
 	public String getVersionInfo() {
 		try {
 			final PackageInfo info = getPackageInfo(getApplicationContext());
-			return "\nVersion: " + info.versionName + " (release " + info.versionCode + ")";
+			return "\nVersion: " + info.versionName;
 		} catch (final NameNotFoundException e) {
 			Log.e(TAG, "Failed to locate package information!");
 		}
