@@ -44,6 +44,6 @@ Examples:
 ರಾಜ್‍ಕುಮಾರ್: ರ ಆ ಜ ್ zwnj ಕ ಉ ಮ ಆ ರ ್
 
 where,
-zwnj: [http://en.wikipedia.org/wiki/Zero-width_non-joiner zero width non joiner], and
-zwj: [http://en.wikipedia.org/wiki/Zero-width_joiner zero width joiner]
+zwnj is [http://en.wikipedia.org/wiki/Zero-width_non-joiner zero width non joiner], and
+zwj is [http://en.wikipedia.org/wiki/Zero-width_joiner zero width joiner].
 To input these special Unicodes, switch to symbols keyboard by pressing "?123" key.
