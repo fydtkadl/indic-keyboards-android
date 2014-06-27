@@ -14,8 +14,8 @@
   * Icon preview.
   * Bug fix: Correct shift key status when switching keyboards.
   * Bug fix: ZWNJ shouldn't be used for implementing அ as delinking symbol in !TamilNet99 keyboard.
-  * Add an easy to use toggle button to switch to user's previous keyboard.
   * Display a getting started help page after install.
+  * Add an easy to use toggle button to switch to user's previous keyboard.
 
 
 == v1.3 ==
