@@ -6,7 +6,7 @@
 
 
 == v1.1 (Released on June 20, 2014) ==
-  * Added a few missing features in !Tamilnet99 Keyboard.
+  * Added a few missing features in !TamilNet99 Keyboard.
 
 
 == v1.2 ==
