@@ -1,4 +1,8 @@
-package org.iisc.mile.indickeyboards.android;
+package org.iisc.mile.indickeyboards.android.ui;
+
+import org.iisc.mile.indickeyboards.android.R;
+import org.iisc.mile.indickeyboards.android.R.id;
+import org.iisc.mile.indickeyboards.android.R.layout;
 
 import android.app.Activity;
 import android.content.Context;
@@ -17,29 +21,9 @@ public class AboutActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_about);
 		textView = (TextView) findViewById(R.id.about_text);
-		textView.setText(getAboutText());
+		textView.setText(getString(R.string.about_text_description));
 	}
-
-	public String getAboutText() {
-		StringBuffer stringBuffer = new StringBuffer();
-		stringBuffer.append("IISc MILE Indic Keyboards");
-		stringBuffer.append(getVersionInfo());
-		stringBuffer.append("\n\n(c) Copyright 2011-2014 MILE lab, IISc");
-		stringBuffer.append("\nVisit http://mile.ee.iisc.ernet.in");
-
-		stringBuffer.append("\n\nCredits:");
-		stringBuffer.append("\nIdea/Conceptualization by:");
-		stringBuffer.append("\n  Shiva Kumar H R <shivahr@gmail.com>");
-		stringBuffer.append("\n  Prof. A G Ramakrishnan <agrkrish@gmail.com>");
-		stringBuffer.append("\n\nDeveloped by:");
-		stringBuffer.append("\n  Shiva Kumar H R <shivahr@gmail.com>");
-		stringBuffer.append("\n  Satvik Neelakant <nsatvik@gmail.com>");
-		stringBuffer.append("\n  Shruthi R <shruthir.colours@gmail.com>");
-		stringBuffer.append("\n  Priya S <priyasnb@gmail.com>");
-		stringBuffer.append("\n  Sandesh S <sandy.s2991@gmail.com>\n");
-		return stringBuffer.toString();
-	}
-
+	
 	public String getVersionInfo() {
 		try {
 			final PackageInfo info = getPackageInfo(getApplicationContext());

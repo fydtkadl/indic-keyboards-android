@@ -25,15 +25,34 @@
         </service>
 
         <activity
-            android:name="org.iisc.mile.indickeyboards.android.SettingsActivity"
+            android:name="org.iisc.mile.indickeyboards.android.ui.SettingsActivity"
             android:icon="@drawable/icon"
             android:label="@string/settings_title" >
         </activity>
         <activity
-            android:name="org.iisc.mile.indickeyboards.android.AboutActivity"
+            android:name="org.iisc.mile.indickeyboards.android.ui.AboutActivity"
             android:icon="@drawable/icon"
             android:label="@string/about_title" >
         </activity>
+        <activity
+            android:name="org.iisc.mile.indickeyboards.android.ui.HelpActivity"
+            android:icon="@drawable/icon"
+            android:label="@string/settings_help_title" >
+        </activity>
+        
+        <activity
+            android:name="org.iisc.mile.indickeyboards.android.ui.HelpDetailsActivity"
+            android:icon="@drawable/icon"
+            android:label="@string/ime_name" >
+        </activity>
+
+        <receiver android:name="org.iisc.mile.indickeyboards.android.AppUpgradeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="org.iisc.mile.indickeyboards.android"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

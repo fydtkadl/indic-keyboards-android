@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory android:title="@string/lang_devanagari" >
+
+        <Preference
+            android:key="hindi_inscript"
+            android:title="@string/dev_inscript" 
+            android:enabled="false"/>
+
+        <Preference
+            android:key="@string/dev_3x4"
+            android:title="@string/dev_3x4" 
+            android:enabled="false"/>
+    </PreferenceCategory>
+    
+
+    <PreferenceCategory android:title="@string/lang_kannada" >
+
+        <Preference
+            android:key="@string/kan_inscript"
+            android:title="@string/kan_inscript" />
+
+        <Preference
+            android:key="@string/kan_kagapa"
+            android:title="@string/kan_kagapa" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/lang_tamil" >
+
+        <Preference
+            android:key="@string/tam_net99"
+            android:title="@string/tam_net99" 
+            android:enabled="false"/>
+
+        <Preference
+            android:key="tamil_inscript"
+            android:title="@string/tam_inscript" 
+            android:enabled="false"/>
+        <Preference
+            android:key="@string/tam_3x4"
+            android:title="@string/tam_3x4" 
+            android:enabled="false"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

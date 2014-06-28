@@ -22,6 +22,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.iisc.mile.indickeyboards.android.utils.Utils;
+
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -151,7 +153,7 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
 	private static final int KB_LANGUAGE_ENGLISH = 5;
 
 	private SharedPreferences mSharedPreferences;
-	private String KEYBOARD_PREFERENCES = "IISc MILE Indic Keyboards Preferences";
+	
 	private static final String KB_CURRENT_LANGUAGE = "Current Keyboard Language";
 	private static final String KB_CURRENT_KANNADA_LAYOUT = "Current Kannada Keyboard Layout";
 	private static final String KB_CURRENT_HINDI_LAYOUT = "Current Devanagari Keyboard Layout";
@@ -793,7 +795,7 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		mSharedPreferences = getSharedPreferences(KEYBOARD_PREFERENCES, MODE_PRIVATE);
+		mSharedPreferences = getSharedPreferences(Utils.KEYBOARD_PREFERENCES, MODE_PRIVATE);
 		mWordSeparators = getResources().getString(R.string.word_separators);
 	}
 

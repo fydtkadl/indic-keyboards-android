@@ -15,7 +15,8 @@
 ** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 ** See the License for the specific language governing permissions and
 ** limitations under the License.
-*/-->
+*/
+-->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Title for Latin keyboard -->
@@ -37,5 +38,77 @@
     <!-- Labels on About page -->
     <string name="about_title">About IISc MILE Indic Keyboards</string>
     <string name="about_logo_description">IISc MILE lab logo</string>
+    <string name="about_text_description"><b>IISc MILE Indic Keyboards</b>\n
+        Version: 1.0 (release 1)\n\n\n
+        (c) Copyright 2011-2014 MILE lab, IISc \nVisit http://mile.ee.iisc.ernet.in
+        \n\n<b>Credits:</b>\nIdea/Conceptualization by:
+        \n  Shiva Kumar H R &lt;shivahr@gmail.com &gt; 
+        \n  Prof. A G Ramakrishnan &lt;agrkrish@gmail.com&gt;
+        \n\n<b>Developed by:</b> 		\n  Shiva Kumar H R &lt;shivahr@gmail.com&gt;
+		\n  Satvik Neelakant &lt;nsatvik@gmail.com&gt;
+		\n  Shruthi R &lt;shruthir.colours@gmail.com&gt;
+		\n  Priya S &lt;priyasnb@gmail.com&gt;
+		\n  Sandesh S &lt;sandy.s2991@gmail.com&gt;\n</string>
+    <string name="notification_text">Learn more</string>
+    <string name="settings_help_title">Help</string>
+    <string name="lang_devanagari">Devanagari</string>
+    <string name="dev_inscript">Inscript</string>
+    <string name="dev_3x4">3 x 4 Keyboard</string>
+    <string name="lang_kannada">Kannada</string>
+    <string name="kan_kagapa">KaGaPa</string>
+    <string name="kan_kagapa_help_text">Examples:\nಕನ್ನಡ: ಕ ನ ್ ನ ಡ \n ಸ್ವಾತಂತ್ರ್ಯ: ಸ ್ ವ ಆ ತ ಂ ತ ್ ರ ್ ಯ \n
+ಹರ್ಷೋಲ್ಲಾಸ: ಹ ರ ್ ಷ ಓ ಲ ್ ಲ ಆ ಸ \n
+ತ್ರಿವರ್ಣ: ತ್ ರ ಇ ವ ರ ್ ಣ \n
+ಧ್ವಜಾರೋಹಣ: ಧ ್ ವ ಜ ಆ ರ ಓ ಹ ಣ \n
+ರಾಷ್ಟ್ರಗೀತೆ: ರ ಆ ಷ ್ ಟ ್ ರ ಗ ಈ ತ ಎ \n
+ಸಾಂಸ್ಕೃತಿಕ: ಸ ಆ ಂ ಸ ್ ಕ ಋ ತ ಇ ಕ \n
+ಕಾರ್ಯಕ್ರಮ: ಕ ಆ ರ ್ ಯ ಕ ್ ರ ಮ \n
+ಅಂತರರಾಷ್ಟ್ರೀಯ: ಅ ಂ ತ ರ ರ ಆ ಷ ್ ಟ ್ ರ ಈ ಯ \n
+ವಾರ್ಷಿಕೋತ್ಸವ: ವ ಆ ರ ್ ಷ ಇ ಕ ಓ ತ ್ ಸ ವ \n
+ಸಾರ್ವತ್ರಿಕ: ಸ ಆ ರ ್ ವ ತ ್ ರ ಇ ಕ \n
+ಮೋಹನ್‌ದಾಸ್: ಮ ಓ ಹ ನ ್ zwnj ದ ಆ ಸ ್ \n
+ಕರಮ್‌ಚಂದ್: ಕ ರ ಮ ್ zwnj ಚ ಂ ದ ್ \n
+ಗಾಂಧಿ: ಗ ಆ ಂ ಧ ಇ\n
+ಸರ್ವೋತ್ಕೃಷ್ಟ: ಸ ರ ್ ವ ಓ ತ ್ ಕ ಋ ಷ ್ ಟ\n
+ಅಧ್ಯಾತ್ಮಿಕ: ಅ ಧ ್ ಯ ಆ ತ ್ ಮ ಇ ಕ\n
+ಅಸ್ಪೃಶ್ಯತೆಯ: ಅ ಸ ್ ಪ ಋ ಶ ್ ಯ ತ ಎ ಯ\n
+ಸೂರ್ಯ: ಸ ಊ ರ ್ ಯ\n
+ಸೂರ್‍ಯ: ಸ ಊ ರ ್ zwj ಯ\n
+ರಾಜ್ಕುಮಾರ್: ರ ಆ ಜ ್ ಕ ಉ ಮ ಆ ರ ್\n
+ರಾಜ್‍ಕುಮಾರ್: ರ ಆ ಜ ್ zwnj ಕ ಉ ಮ ಆ ರ ್\n</string>
+    <string name="kan_inscript">Inscript</string>
+    <string name="kan_inscript_help_text">Examples:\n
+ಕನ್ನಡ: ಕ ನ ್ ನ ಡ\n
+ಸ್ವಾತಂತ್ರ್ಯ: ಸ ್ ವ ಾ ತ ಂ ತ ್ ರ ್ ಯ\n
+ಹರ್ಷೋಲ್ಲಾಸ: ಹ ರ ್ ಷ ೋ ಲ ್ ಲ ಾ ಸ\n
+ತ್ರಿವರ್ಣ: ತ ್ ರ ಿ ವ ರ ್ ಣ\n
+ಧ್ವಜಾರೋಹಣ: ಧ ್ ವ ಜ ಾ ರ ೋ ಹ ಣ\n
+ರಾಷ್ಟ್ರಗೀತೆ: ರ ಾ ಷ ್ ಟ ್ ರ ಗ ೀ ತ ೆ\n
+ಸಾಂಸ್ಕೃತಿಕ: ಸ ಾ ಂ ಸ ್ ಕ ೃ ತ ಿ ಕ\n
+ಕಾರ್ಯಕ್ರಮ: ಕ ಾ ರ ್ ಯ ಕ ್ ರ ಮ\n
+ಅಂತರರಾಷ್ಟ್ರೀಯ: ಅ ಂ ತ ರ ರ ಾ ಷ ್ ಟ ್ ರ ೀ ಯ\n
+ವಾರ್ಷಿಕೋತ್ಸವ: ವ ಾ ರ ್ ಷ ಿ ಕ ೋ ತ ್ ಸ ವ\n
+ಸಾರ್ವತ್ರಿಕ: ಸ ಾ ರ ್ ವ ತ ್ ರ ಿ ಕ\n
+ಮೋಹನ್‌ದಾಸ್: ಮ ೋ ಹ ನ ್ zwnj ದ ಾ ಸ ್\n
+ಕರಮ್‌ಚಂದ್: ಕ ರ ಮ ್ zwnj ಚ ಂ ದ ್\n
+ಗಾಂಧಿ: ಗ ಾ ಂ ಧ ಿ\n
+ಸರ್ವೋತ್ಕೃಷ್ಟ: ಸ ರ ್ ವ ೋ ತ ್ ಕ ೃ ಷ ್ ಟ\n
+ಅಧ್ಯಾತ್ಮಿಕ: ಅ ಧ ್ ಯ ಾ ತ ್ ಮ ಿ ಕ\n
+ಅಸ್ಪೃಶ್ಯತೆಯ: ಅ ಸ ್ ಪ ೃ ಶ ್ ಯ ತ ೆ ಯ\n
+ಸೂರ್ಯ: ಸ ೂ ರ ್ ಯ\n
+ಸೂರ್‍ಯ: ಸ ೂ ರ ್ zwj ಯ\n
+ರಾಜ್ಕುಮಾರ್: ರ ಾ ಜ ್ ಕ ು ಮ ಾ ರ ್\n
+ರಾಜ್‍ಕುಮಾರ್: ರ ಾ ಜ ್ zwnj ಕ ು ಮ ಾ ರ ್\n</string>
+    <string name="zwnj_help_text">where, zwnj is zero width non joiner and, zwj is zero width joiner. To input these special Unicodes, switch to symbols keyboard by pressing "?123" key.</string>
+    <string name="lang_tamil">Tamil</string>
+    <string name="tam_net99">TamilNet99</string>
+    <string name="tam_3x4">3 x 4 Keyboard</string>
+    <string name="tam_inscript">Inscript</string>
+    <string name="lang_malayalam">Malayalam</string>
+    <string name="mal_inscript">Inscript</string>
+    <string name="mal_3x4">3 x 4 Keyboard</string>
+    <string name="lang_telugu">Telugu</string>
+    <string name="telg_inscript">Inscript</string>
+    <string name="telg_3x4">3 x 4 Keyboard</string>
 
 </resources>
