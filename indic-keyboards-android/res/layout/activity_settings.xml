@@ -3,13 +3,20 @@
     android:key="indic_keyboards_settings"
     android:title="@string/settings_title" >
 
+    <Preference android:title="@string/settings_help_title" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.iisc.mile.indickeyboards.android.ui.HelpActivity"
+            android:targetPackage="org.iisc.mile.indickeyboards.android" />
+    </Preference>
+
     <Preference
         android:summary="@string/settings_about_description"
         android:title="@string/settings_about" >
 
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetClass="org.iisc.mile.indickeyboards.android.AboutActivity"
+            android:targetClass="org.iisc.mile.indickeyboards.android.ui.AboutActivity"
             android:targetPackage="org.iisc.mile.indickeyboards.android" />
     </Preference>
 
