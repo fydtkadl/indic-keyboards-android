@@ -1,0 +1,1 @@
+![http://indic-keyboards-android.googlecode.com/svn/wiki/screenshots/About.png](http://indic-keyboards-android.googlecode.com/svn/wiki/screenshots/About.png)
